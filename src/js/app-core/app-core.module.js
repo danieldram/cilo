@@ -1,9 +1,3 @@
-/**
-* The AppCore module serves as a place to hold super generic arrays and services
-* that can be injected and used in multiple applications
-*/
-
-
 
 module.exports = angular.module('AppCore',[])
 
@@ -12,22 +6,15 @@ module.exports = angular.module('AppCore',[])
     function AppCore (){
         var quickDataStore = [];
         var appCore ={};
+        var debug = true;
 
         appCore.VER = "0.0.1";
         appCore.mapArray;
 
-        /**
-         * When set to true, all comments and debugging notes will display in the console from each
-         * executed function. This will also include the name of the function initiated the log.
-         * @constructor
-         * @param {array} Array - An array of elements.
-         * @param {function} Function - A function that will be executed on each element in the provided array
-         * @example
-         * var arr = [1,2,3,4,5];
-         * function dbl(x) {return x*2;}
-         * $scope.doubled.push( AppCore.mapArray(arr, dbl));
-         * //$scope.doubled = [2, 4, 6, 8, 10]
-         */
+        appCore.log = function(data){
+           if(debug) console.log(data)
+        };
+
         appCore.mapArray =function(arr, fn){
             for(var i = 0; i<arr.length; i++){
                  fn(arr[i], i);
@@ -48,10 +35,6 @@ module.exports = angular.module('AppCore',[])
             }
         };
 
-        /**
-        * The quickDataTransfer() method will quickly transfer data between two different controllers.
-        * It is not intended for presistence or heavy use. It mainly is used for communicating state.
-        */
 
         appCore.quickDataTransfer = function(){
 

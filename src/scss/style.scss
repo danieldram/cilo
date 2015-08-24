@@ -3,23 +3,17 @@
 // -------------------------------------
 
 @import "settings/reset";
-@import "modules/variables";
-@import "modules/functions";
-@import "settings/typography";
-@import "settings/utilities";
+@import "settings/full-width.scss";
+@import "settings/push-down";
 
-//@import "./public/bower_components/foundation/scss/foundation.scss";
-@import "vendor/angular-material.scss";
+
+
 @import "vendor/foundation.scss";
 @import "vendor/foundation-icons.scss";
 
 
-@import "components/store-locator.scss";
-@import "components/googlemaps.scss";
-@import "components/googlemaps-mobile.scss";
-
-@import "components/map-search.scss";
-@import "components/map-search-mobile.scss";
-@import "components/info-window.scss";
-@import "components/slide-nav.scss";
-
+//--------------------------------------
+// COMPONENTS
+//--------------------------------------
+@import "components/main-navigation.scss";
+@import "components/side-panel.scss";

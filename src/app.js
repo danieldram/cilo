@@ -17,7 +17,7 @@ var AppMath          = require('./js/app-core/app-math.module.js');
 ******************/
 
 /*******************************
-STORE LOCATOR
+Matters APP
 *********************************/
 
-var main      = require('./js/main/main.');
+var MattersApp      = require('./js/matters-app/matters.module.js');

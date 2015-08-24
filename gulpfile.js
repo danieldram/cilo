@@ -152,9 +152,9 @@ function startBrowserSync(){
     }
 
     gulp.watch(config.sassDir,['styles', 'bundle-css']);
-    gulp.watch("./src/scss/**/**/*.scss", ['bundle-css']);
+    gulp.watch("./src/scss/**/*.scss", ['bundle-css']);
     gulp.watch("./src/scss/components/*.scss", ['bundle-css']);
-    gulp.watch("./src/js/**/*.js", ['js']);
+    gulp.watch("./src/js/**/**/*.js", ['js']);
 
     var options ={
         proxy: 'localhost:' + port,

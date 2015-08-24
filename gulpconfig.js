@@ -16,13 +16,6 @@ module.exports = function(){
         viewMain:'./public/',
         viewMainw:'./public/**/*.*',
         viewPartials:'./public/partials/',
-
-
-        bower:{
-            json: require('./public/bower.json'),
-            directory:'./public/bower_components/',
-            ignorepath:'../../public',
-        },
         nodeServer: './server.js',
         server:'./server/',
     };
