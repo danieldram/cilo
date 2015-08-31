@@ -3,5 +3,18 @@
         <input type="checkbox" /> <label>Select All</label>
     </div>
 
+    <div class="sidePanel__messageList | medium-12 column"
+         ng-repeat="client in matters |filter:filter.keyword ">
+            <div class="sidePanel__clientBar | medium-12">
+                <p>{{client.client_name}}</p>
+            </div>
+            <div class="sidePanel__clientMessages | medium-12" ng-repeat="matter in client.matters">
+                <p>{{matter.number}}</p>
+                <p class="clientMessages__description">{{matter.description}}</p>
+
+            </div>
+
+    </div>
+
 
 </div>

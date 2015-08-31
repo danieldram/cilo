@@ -2,13 +2,15 @@ var angular = require ('angular');
 
 MattersCtrl.$inject = ['$scope', 'AppCore', 'AppData', 'AppMath', 'MattersData'];
 function MattersCtrl ($scope, AppCore, AppData, AppMath, MattersData){
-    $scope.log          = AppCore.log;
+
+    $scope.log              = AppCore.log;
     $scope.log("Matters Ctrl Connected");
 
-    $scope.matters      = MattersData;
+    $scope.mattersData      = MattersData;
+    $scope.matters;
 
-    $scope.matters.get().then(function(data){
-       console.log(data);
+    $scope.mattersData.get().then(function(data){
+       $scope.matters = data;
 
     });
 

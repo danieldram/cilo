@@ -110,6 +110,7 @@ section {
 
 body {
   line-height: 1;
+  height: 100%;
 }
 
 ol,
@@ -12066,4 +12067,28 @@ th.hide-for-touch {
 
 .sidePanel__container {
   border: 1px solid #444;
+  height: 630px;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+}
+
+.sidePanel__messageList {
+  margin: 0;
+  padding: 0;
+}
+
+.sidePanel__clientBar {
+  background-color: #aaa;
+  padding: 0 0px;
+}
+
+.sidePanel__messageList p {
+  padding: 0 10px;
+  margin: 0;
+}
+
+p.clientMessages__description {
+  font-size: .75em;
+  padding-bottom: 20px;
 }
