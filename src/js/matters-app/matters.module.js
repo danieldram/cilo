@@ -6,4 +6,7 @@ module.exports = angular.module('MattersApp', ['AppCore','AppMath','AppData'])
 
 
 .directive('mainNavigation',     require('./directives/main-navigation.js'))
-.directive('sidePanel',          require('./directives/side-panel.js'));
+.directive('messageArea',        require('./directives/message-area.js'))
+.directive('sidePanel',          require('./directives/side-panel.js'))
+
+.factory('MattersData',          require('./factories/matters-data.js'));

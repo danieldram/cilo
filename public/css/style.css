@@ -7916,3 +7916,6 @@ th.hide-for-touch {
 
 .mainNavigation__filters {
   margin-top: 20px; }
+
+.sidePanel__container {
+  border: 1px solid #444; }
