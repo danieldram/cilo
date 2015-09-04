@@ -28,7 +28,8 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1;
+  height: 100%; }
 
 ol, ul {
   list-style: none; }
@@ -7918,4 +7919,26 @@ th.hide-for-touch {
   margin-top: 20px; }
 
 .sidePanel__container {
-  border: 1px solid #444; }
+  border: 1px solid #444;
+  margin: 0;
+  padding: 0; }
+
+.sidePanel__messageList__container {
+  height: 550px;
+  overflow-y: scroll; }
+
+.sidePanel__messageList {
+  margin: 0;
+  padding: 0; }
+
+.sidePanel__clientBar {
+  background-color: #aaa;
+  padding: 0 0px; }
+
+.sidePanel__messageList p {
+  padding: 0 10px;
+  margin: 0; }
+
+p.clientMessages__description {
+  font-size: .75em;
+  padding-bottom: 20px; }

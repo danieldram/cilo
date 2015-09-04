@@ -1,17 +1,20 @@
 .sidePanel__container {
     border:             1px solid #444;
-    height:             630px;
-    overflow-y:         scroll;
     margin:             0;
     padding:            0;
 
 
 }
 
+.sidePanel__messageList__container {
+    height:             550px;
+    overflow-y:         scroll;
+}
 
 .sidePanel__messageList {
     margin:             0;
     padding:            0;
+
 
 }
 

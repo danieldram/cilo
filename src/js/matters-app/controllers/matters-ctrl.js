@@ -1,16 +1,23 @@
 var angular = require ('angular');
 
-MattersCtrl.$inject = ['$scope', 'AppCore', 'AppData', 'AppMath', 'MattersData'];
-function MattersCtrl ($scope, AppCore, AppData, AppMath, MattersData){
+MattersCtrl.$inject = ['$scope','$filter', 'AppCore', 'AppData', 'AppMath', 'MattersData'];
+function MattersCtrl ($scope, $filter, AppCore, AppData, AppMath, MattersData){
 
     $scope.log              = AppCore.log;
     $scope.log("Matters Ctrl Connected");
 
-    $scope.mattersData      = MattersData;
+    $scope.mattersData              = MattersData;
     $scope.matters;
 
+
+    $scope.filter                   = {};
+    $scope.filter.clientName;
+    $scope.filter.keyword;
+
+
     $scope.mattersData.get().then(function(data){
-       $scope.matters = data;
+        console.log(data);
+        $scope.matters = data;
 
     });
 
