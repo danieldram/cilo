@@ -9,7 +9,8 @@
                 <div class="sidePanel__clientBar | medium-12">
                     <p>{{client.client_name}}</p>
                 </div>
-                <div class="sidePanel__clientMessages | medium-12" ng-repeat="matter in client.matters">
+                <div class="sidePanel__clientMessages | medium-12"
+                     ng-repeat="matter in client.matters | hideClosedMatters:this">
                     <p>{{matter.number}}</p>
                     <p class="clientMessages__description">{{matter.description}}</p>
 

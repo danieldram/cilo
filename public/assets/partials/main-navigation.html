@@ -7,15 +7,16 @@
 
             <div class="mainNavigation__filters | medium-10 columns">
                 <div class="mainNavigation__inputBox | medium-4 columns">
-                    <input client-name-input type="text" placeholder="filter by client" ng-model="filter.name" />
+                    <input  type="text" placeholder="filter by client" client-name-input ng-model="filter.name" />
                 </div>
 
                 <div class="mainNavigation__inputBox | medium-4 columns">
                     <input type="text" placeholder="filter by keyword"  ng-model="filter.keyword"/>
                 </div>
 
-                <div class="mainNavigation__inputBox | medium-4 columns end | | push-down-10 ">
-                    <input type="checkbox"/> <label>Hide closed matters</label>
+                <div class="mainNavigation__inputBox | medium-4 columns end | push-down-10 ">
+                    <input type="checkbox"
+                            ng-model="filter.hideClosed"/> <label>Hide closed matters</label>
                 </div>
             </div>
         </div>
