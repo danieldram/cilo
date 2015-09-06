@@ -7942,3 +7942,16 @@ th.hide-for-touch {
 p.clientMessages__description {
   font-size: .75em;
   padding-bottom: 20px; }
+
+.sidePanel__checkbox {
+  padding: 0;
+  margin: 0; }
+
+.sidePanel__contents {
+  padding: 0;
+  margin: 0; }
+
+.sidePanel__dropdown select {
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }

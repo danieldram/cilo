@@ -1,0 +1,17 @@
+ <div class="row">
+    <div class="sidePanel__checkbox | medium-1 columns">
+      <input type="checkbox" ng-model="checkbox" ng-true-value="'true'" ng-false-value="'false'">
+    </div>
+
+    <div class="sidePanel__contents | medium-9 columns">
+        <p>{{number}}</p>
+        <p class="clientMessages__description">{{desc}}</p>
+    </div>
+
+    <div class="sidePanel__dropdown | medium-1 columns end">
+            <select name="sidePanel__select" message-actions ng-model="message.action">
+              <option value="option-1">Option 1</option>
+              <option value="option-2">Option 2</option>
+            </select>
+    </div>
+</div>

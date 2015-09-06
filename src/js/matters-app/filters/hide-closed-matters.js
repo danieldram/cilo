@@ -7,14 +7,14 @@ function hideClosedMatters () {
 
     return function(matter, scope){
 
-        var arr = [];
-        console.log(scope);
+        var filteredMessages = [];
+
         if(scope.$parent.filter.hideClosed){
             matter.map(function(obj){
                 if(obj.status == 'open')
-                arr.push(obj);
+                filteredMessages.push(obj);
             });
-          return arr;
+          return filteredMessages;
 
         }else{
 

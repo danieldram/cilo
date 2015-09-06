@@ -13,7 +13,7 @@ function clientNameInput () {
 };
 
 
-function link(scope, element, attr, ngModelCtrl, $filter){
+function link(scope, element, attr, ngModelCtrl){
     console.log('client name input connected');
     console.log(ngModelCtrl);
 

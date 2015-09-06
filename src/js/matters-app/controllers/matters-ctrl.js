@@ -9,12 +9,12 @@ function MattersCtrl ($scope, $filter, AppCore, AppData, AppMath, MattersData){
     $scope.mattersData              = MattersData;
     $scope.matters;
 
-
     $scope.filter                   = {};
     $scope.filter.clientName;
     $scope.filter.keyword;
     $scope.filter.hideClosed;
-
+    $scope.filter.selectSingle;
+    $scope.getCheckStatus = function(){ console.log('running'); return $scope.wtf;};
 
     $scope.mattersData.get().then(function(data){
         console.log(data);

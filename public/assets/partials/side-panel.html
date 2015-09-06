@@ -1,6 +1,6 @@
 <div class="sidePanel__container | medium-3 columns">
     <div class="sidePanel__selectAll | row">
-        <input type="checkbox" /> <label>Select All</label>
+        <input type="checkbox" select-all ng-model="filter.selectAll" /> <label>Select All</label>
     </div>
 
     <div class="sidePanel__messageList__container | medium-12">
@@ -11,9 +11,12 @@
                 </div>
                 <div class="sidePanel__clientMessages | medium-12"
                      ng-repeat="matter in client.matters | hideClosedMatters:this">
-                    <p>{{matter.number}}</p>
-                    <p class="clientMessages__description">{{matter.description}}</p>
-
+                    <message-template checkbox="{{filter.selectSingle}}"
+                                      desc="{{matter.description}}"
+                                      number="{{matter.number}}"
+                                      status="matter.status"
+                                      hash_id="{{matter.id}}">
+                    </message-template>
                 </div>
 
         </div>
