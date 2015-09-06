@@ -10,7 +10,7 @@
                     <p>{{client.client_name}}</p>
                 </div>
                 <div class="sidePanel__clientMessages | medium-12"
-                     ng-repeat="matter in client.matters | hideClosedMatters:this">
+                     ng-repeat="matter in client.matters | hideClosedMatters:this | filter: filter.keyword">
                     <message-template checkbox="{{filter.selectSingle}}"
                                       desc="{{matter.description}}"
                                       number="{{matter.number}}"
