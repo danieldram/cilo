@@ -9,7 +9,8 @@ function messageTemplate () {
           number:   '@number',
           id:       '@id',
           status:   '=status',
-          matter:   '=matter'
+          matter:   '=matter',
+          matters:  '=matters'
              },
       templateUrl: 'assets/partials/message-template.html',
       replace:true,

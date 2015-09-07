@@ -1,7 +1,7 @@
 var angular = require ('angular');
 
-MattersCtrl.$inject = ['$scope','$filter', 'AppCore', 'AppData', 'AppMath', 'MattersData'];
-function MattersCtrl ($scope, $filter, AppCore, AppData, AppMath, MattersData){
+MattersCtrl.$inject = ['$scope','$filter', 'AppCore', 'AppData', 'AppMath', 'MattersData', 'IncludesPolyfill'];
+function MattersCtrl ($scope, $filter, AppCore, AppData, AppMath, MattersData, IncludesPolyfill){
 
     $scope.log              = AppCore.log;
     $scope.log("Matters Ctrl Connected");

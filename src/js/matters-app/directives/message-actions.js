@@ -20,7 +20,28 @@ function link (scope, element, attr, ngModelCtrl) {
         if(value=="close")
         scope.matter.status = "closed";
 
-        console.log(scope.matter);
+        if(value=="delete"){
+            console.log(scope.matter);
+            console.log(scope.matters);
+
+            scope.matters.map(function(matter){
+                var index=0;
+                matter.matters.map(function(item){
+                    index++;
+                    if(item.number == scope.matter.number){
+                        console.log('found you @ ' + index);
+                        matter.matters.splice(index-1, 1);
+                        console.log(matter.matters);
+                    }
+                });
+
+            })
+
+
+
+        }
+
+
 
     });
 
