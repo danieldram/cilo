@@ -10,7 +10,6 @@ function MattersCtrl ($scope, $filter, AppCore, AppData, AppMath, MattersData, I
     $scope.matters;
 
     $scope.active                   = {};
-    $scope.active.number            = 'TEST';
 
     $scope.filter                   = {};
     $scope.filter.clientName;
