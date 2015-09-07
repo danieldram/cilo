@@ -16,13 +16,15 @@ function link (scope, element, attr, ngModelCtrl) {
     console.log('message action connected');
 
     ngModelCtrl.$parsers.push(function(value){
-        console.log(value);
+
         if(value=="close")
         scope.matter.status = "closed";
+        scope.active.status = "closed";
 
         if(value=="delete"){
-            console.log(scope.matter);
-            console.log(scope.matters);
+            scope.active.number      = null;
+            scope.active.status      = null;
+            scope.active.description = null;
 
             scope.matters.map(function(matter){
                 var index=0;
@@ -35,13 +37,9 @@ function link (scope, element, attr, ngModelCtrl) {
                     }
                 });
 
-            })
-
-
+            });
 
         }
-
-
 
     });
 

@@ -9,11 +9,15 @@ function MattersCtrl ($scope, $filter, AppCore, AppData, AppMath, MattersData, I
     $scope.mattersData              = MattersData;
     $scope.matters;
 
+    $scope.active                   = {};
+    $scope.active.number            = 'TEST';
+
     $scope.filter                   = {};
     $scope.filter.clientName;
     $scope.filter.keyword;
     $scope.filter.hideClosed;
     $scope.filter.selectSingle;
+
 
     $scope.mattersData.get().then(function(data){
         console.log(data);
