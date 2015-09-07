@@ -5,6 +5,8 @@ cd cilo
 npm install
 npm install gulp -g
 npm install browser-sync -g
+gulp js
+gulp bundle-css
 gulp serve-dev
 ```
 # If gulp serve-dev fails...
