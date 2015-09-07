@@ -1,10 +1,10 @@
 # How to Run
 ```sh
+npm install gulp -g
+npm install browser-sync -g
 $git clone https://github.com/danieldram/cilo
 cd cilo
 npm install
-npm install gulp -g
-npm install browser-sync -g
 gulp js
 gulp bundle-css
 gulp serve-dev
