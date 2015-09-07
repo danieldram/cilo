@@ -17,4 +17,4 @@ module.exports = angular.module('MattersApp', ['AppCore','AppMath','AppData'])
 .filter('hideClosedMatters',            require('./filters/hide-closed-matters.js'))
 
 .factory('MattersData',                 require('./factories/matters-data.js'))
-.factory('IncludesPolyfill',           require('./factories/includes-polyfill.js'));
+.factory('IncludesPolyfill',            require('./factories/includes-polyfill.js'));

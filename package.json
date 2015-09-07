@@ -1,7 +1,7 @@
 {
-    "name": "Matters App",
+    "name": "matters-app",
     "version": "0.0.1",
-    "description": "Matters App",
+    "description": "matters-app",
     "main": "./public/index.html",
     "window": {
         "toolbar": false,
