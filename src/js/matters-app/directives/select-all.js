@@ -12,7 +12,7 @@ function selectAll () {
 function link (scope, element, attr, ngModelCtrl){
 
     console.log('select all connected');
-    console.log(ngModelCtrl);
+
     ngModelCtrl.$parsers.push(function(value){
 
         scope.filter.selectSingle = value;

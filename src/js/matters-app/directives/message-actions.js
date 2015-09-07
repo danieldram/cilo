@@ -31,9 +31,9 @@ function link (scope, element, attr, ngModelCtrl) {
                 matter.matters.map(function(item){
                     index++;
                     if(item.number == scope.matter.number){
-                        console.log('found you @ ' + index);
+
                         matter.matters.splice(index-1, 1);
-                        console.log(matter.matters);
+
                     }
                 });
 

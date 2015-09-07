@@ -14,9 +14,9 @@ function isolateCheckbox(){
 
 function link(scope, element, attr){
     console.log('isolate checkbox connected');
-    console.log(scope.checkbox);
+
     scope.test = scope.checkbox();
-    console.log(scope.test);
+
 
 
 };

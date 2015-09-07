@@ -26,12 +26,11 @@ function link(scope, attr, element){
     if(scope.checkbox == 'false') scope.test=false;
 
     scope.handler = function (messageDetails) {
-        console.log(messageDetails);
-        console.log(scope.active);
+
         scope.active.number         = messageDetails.number;
         scope.active.status         = messageDetails.status;
         scope.active.description    = messageDetails.description;
-        console.log(scope.active)
+
 
     }
 
