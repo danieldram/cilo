@@ -9,5 +9,4 @@ Web Assets 2
 .DS_Store
 .tmp
 sass
-src/js/store-locator
 public/css/js
