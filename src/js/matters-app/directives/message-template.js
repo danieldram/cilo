@@ -8,7 +8,8 @@ function messageTemplate () {
           desc:     '@desc',
           number:   '@number',
           id:       '@id',
-          status:   '=status'
+          status:   '=status',
+          matter:   '=matter'
              },
       templateUrl: 'assets/partials/message-template.html',
       replace:true,
@@ -18,7 +19,7 @@ function messageTemplate () {
 };
 
 function link(scope, attr, element){
-    console.log(scope.checkbox);
+
     if(scope.checkbox == 'true') scope.test=true;
     if(scope.checkbox == 'false') scope.test=false;
 

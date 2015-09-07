@@ -13,7 +13,17 @@ function messageActions () {
 
 
 function link (scope, element, attr, ngModelCtrl) {
-   console.log('message action connected');
+    console.log('message action connected');
+
+    ngModelCtrl.$parsers.push(function(value){
+        console.log(value);
+        if(value=="close")
+        scope.matter.status = "closed";
+
+        console.log(scope.matter);
+
+    });
+
 
 
 }
